@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: cursive;
+            }
+            html, body{
+                height: 100%;
+                width: 100%;
+            }
+            body{
+                background-image: url("https://images.unsplash.com/photo-1565617273348-1698090fe190?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fitcrop&w=1955&q=80");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .login_box{
+                width: 450px;
+                background-color: #ffffff;
+                position: relative;
+                top: 25%;
+                left: 15%;
+                padding: 30px;
+                box-sizing: border-box;
+                transition: ease .1s;
+                border-radius: 6px;
+            }
+            .login_box:hover{
+                top: 24%;
+                background-color: #ffffffff;
+                padding: 40px;
+                left: 14.8%;
+
+            }
+            .login_box h3{
+                all: unset;
+                width: 100%;
+                font-size: 30px;
+            }
+            .login_box input{
+                all: unset;
+                width: 90%;
+                border: 1px solid #333;
+                margin-top: 20px;
+                padding: 8px 16px;
+                border-radius: 3px;
+
+            }
+            .login_box input:focus{
+                border-color: #333333;
+                border-width: 3px;
+                padding: 6px 14px;
+            }
+            .login_box input[type=submit]{
+                all: unset;
+                width: 90%;
+                border:1px solid #333; 
+                margin-top: 20px;
+                padding: 8px 16px;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: .2s;
+
+            }
+            .login_box input[type=submit]:hover{
+                box-shadow: 3px 3px  10px black;
+                border:1px #ffffff solid;
+            }
+            .logo{
+                position: fixed;
+                right: 10%;
+                top: 25%;
+            
+                
+            }
+            .logo h3{
+                color: white;
+                font-family: cursive;
+                font-size: 70px;
+            }
+        </style>        
+    </head>
+    <body>
+
+        <div class="logo">
+            <h3>INSAJET</h3>
+        </div>
+            <div class="login_box">
+                <h3 class="login_name">Login</h3>
+                <input type="text" placeholder="Email"/>
+                <br>
+                <input type="password" placeholder="password"/>
+                <br>
+                <input type="submit" name="submit" value="Login"/>
+            </div>
+    </body>
+</html>
